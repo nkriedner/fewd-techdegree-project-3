@@ -20,39 +20,63 @@
             <form action="index.html" method="post">
                 <fieldset>
                     <legend>Contact Information</legend>
-                    <label for="name">Full Name</label>
-                    <input type="text" id="name" name="name" placeholder="Required" required />
-                    <label for="email">Email Address</label>
-                    <input type="text" id="email" name="email" placeholder="Required" required />
-                    <label for="phone">Phone Number</label>
-                    <input type="tel" id="phone" name="phone" />
-                    <label for="street">Street Address</label>
-                    <input type="text" id="street" name="street" />
-                    <label for="city">City</label>
-                    <input type="text" id="city" name="city" />
-                    <label for="state">State</label>
-                    <select name="state" id="state">
-                        <option value="placeholder_option">Choose State</option>
-                    </select>
-                    <label for="zip">Zip Code</label>
-                    <input type="text" id="zip" name="zip" />
+                    <div class="input-container">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" placeholder="Required" required />
+                    </div>
+                    <div class="input-container">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" placeholder="Required" required />
+                    </div>
+                    <div class="input-container">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" />
+                    </div>
+                    <div class="input-container">
+                        <label for="street">Street Address</label>
+                        <input type="text" id="street" name="street" />
+                    </div>
+                    <div class="input-container">
+                        <label for="city">City</label>
+                        <input type="text" id="city" name="city" />
+                    </div>
+                    <div class="input-container">
+                        <label for="state">State</label>
+                        <select name="state" id="state">
+                            <option value="placeholder_option">Choose State</option>
+                        </select>
+                    </div>
+                    <div class="input-container">
+                        <label for="zip">Zip Code</label>
+                        <input type="text" id="zip" name="zip" />
+                    </div>
                 </fieldset>
                 <hr />
                 <fieldset>
                     <legend>Newsletter</legend>
                     <label>Select the newsletters you would like to receive</label>
-                    <input type="checkbox" id="newsletter1" name="newsletter1" value="HTML News" />
-                    <label for="newsletter1">HTML News</label>
-                    <input type="checkbox" id="newsletter2" name="newsletter2" value="CSS News" />
-                    <label for="newsletter2">CSS News</label>
-                    <input type="checkbox" id="newsletter3" name="newsletter3" value="Javascript News" />
-                    <label for="newsletter3">Javascript News</label>
+                    <div class="input-container">
+                        <input type="checkbox" id="newsletter1" name="newsletter" value="html" />
+                        <label for="newsletter1">HTML News</label>
+                    </div>
+                    <div class="input-container">
+                        <input type="checkbox" id="newsletter2" name="newsletter" value="css" />
+                        <label for="newsletter2">CSS News</label>
+                    </div>
+                    <div class="input-container">
+                        <input type="checkbox" id="newsletter3" name="newsletter" value="javascript" />
+                        <label for="newsletter3">Javascript News</label>
+                    </div>
                     <label>Newsletter format</label>
-                    <input type="radio" id="html_format" name="newsletter_format" value="HTML" />
-                    <label for="html_format">HTML</label>
-                    <input type="radio" id="plain_text_format" name="newsletter_format" value="Plain text" />
-                    <label for="plain_text_format">Plain text</label>
-                    <label for="other_topics">Other topics you'd like to hear about</label>
+                    <div class="input-container">
+                        <input type="radio" id="html_format" name="newsletter_format" value="html" />
+                        <label for="html_format">HTML</label>
+                    </div>
+                    <div class="input-container">
+                        <input type="radio" id="plain_text_format" name="newsletter_format" value="plain_text" />
+                        <label for="plain_text_format">Plain text</label>
+                    </div>
+                    <label for="other_topics">Other topics you'd like to hear about</label><br />
                     <textarea name="other_topics" id="other_topics" cols="30" rows="10"></textarea>
                 </fieldset>
                 <button type="submit">Sign Up</button>
