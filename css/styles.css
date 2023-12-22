@@ -10,6 +10,15 @@ body {
     font-family: "Merriweather", serif;
 }
 
+h2,
+p,
+hr,
+form,
+footer {
+    max-width: 560px;
+    margin: auto;
+}
+
 /* HEADER STYLES */
 header {
     text-align: center;
@@ -38,11 +47,23 @@ p {
     margin-bottom: 0.2rem;
 }
 
-/* MEDIA QUERIES */
-@media screen and (min-width: 560px) {
-    h2,
-    p {
-        max-width: 560px;
-        margin: auto;
-    }
+/* FORM STYLES */
+fieldset {
+    margin-bottom: 2rem;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 1rem;
+}
+
+button:hover {
+    cursor: pointer;
 }
