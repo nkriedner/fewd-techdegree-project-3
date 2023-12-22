@@ -49,6 +49,8 @@ p {
 
 /* FORM STYLES */
 fieldset {
+    border: none;
+    outline: none;
     margin-bottom: 2rem;
 }
 
@@ -56,6 +58,10 @@ fieldset {
     display: flex;
     flex-direction: column;
     margin-bottom: 1rem;
+}
+
+textarea {
+    width: 100%;
 }
 
 button {
