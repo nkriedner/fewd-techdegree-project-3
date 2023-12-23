@@ -78,14 +78,23 @@ legend:first-child {
     margin-bottom: 1.15rem;
 }
 
+fieldset div {
+    margin: 0.7rem 0;
+}
+fieldset > label {
+    margin-top: 1.15rem;
+}
+
 label {
+    display: inline-block;
     font-size: 0.95rem;
     color: #a8a8a8;
     margin-bottom: 0.5rem;
 }
 
 input,
-select {
+select,
+textarea {
     padding: 1rem;
     background-color: #e8e6e6;
     outline: none;
@@ -103,16 +112,37 @@ input#zip {
     width: 50%;
 }
 
+input[type="checkbox"],
+input[type="radio"] {
+    margin-right: 0.5rem;
+}
+
 textarea {
     width: 100%;
+    margin-top: 1rem;
 }
 
 button {
+    font-family: inherit;
     display: block;
     width: 100%;
-    padding: 1rem;
+    padding: 1.2rem;
+    font-weight: bold;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background: #40caca;
+    color: white;
+    font-size: 1.25rem;
 }
 
 button:hover {
     cursor: pointer;
+}
+
+footer {
+    color: #a8a8a8;
+    font-size: 1rem;
+    font-style: italic;
+    padding: 2rem 0 12rem;
 }
