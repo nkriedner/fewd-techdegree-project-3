@@ -113,10 +113,15 @@ textarea:focus {
     border: 2px solid #3a3aaa;
 }
 
-input::placeholder {
+input::placeholder,
+textarea::placeholder {
     opacity: 0.5;
     font-style: italic;
     text-align: right;
+}
+
+textarea::placeholder {
+    text-align: left;
 }
 
 input#zip {
