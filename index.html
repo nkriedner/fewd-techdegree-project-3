@@ -17,7 +17,7 @@
             <h1>The Code Review</h1>
             <h2>Signup for our newsletter</h2>
             <p>Get the latest news on how your code is doing right in your inbox</p>
-            <hr />
+            <!-- <hr /> -->
         </header>
         <main>
             <form action="index.html" method="post">
@@ -46,7 +46,8 @@
                     <div class="input-container">
                         <label for="state">State</label>
                         <select name="state" id="state">
-                            <option value="placeholder_option">Choose State</option>
+                            <option value="" disabled selected>Choose State</option>
+                            <option value="test">test</option>
                         </select>
                     </div>
                     <div class="input-container">
@@ -54,7 +55,7 @@
                         <input type="text" id="zip" name="zip" />
                     </div>
                 </fieldset>
-                <hr />
+                <!-- <hr /> -->
                 <fieldset>
                     <legend>Newsletter</legend>
                     <label>Select the newsletters you would like to receive</label>

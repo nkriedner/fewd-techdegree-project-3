@@ -8,6 +8,9 @@
 /* GENERAL STYLES */
 body {
     font-family: "Merriweather", serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 h2,
@@ -15,8 +18,10 @@ p,
 hr,
 form,
 footer {
-    max-width: 560px;
-    margin: auto;
+    /* max-width: 560px; */
+    /* margin: auto; */
+    margin-left: 1rem;
+    margin-right: 1rem;
 }
 
 /* HEADER STYLES */
@@ -26,6 +31,7 @@ header {
 
 h1 {
     background-color: #2b2121;
+    width: 100vw;
     color: whitesmoke;
     padding: 1.5rem;
     font-size: 1.2rem;
@@ -42,7 +48,7 @@ p {
     font-size: 0.9rem;
     color: #a8a8a8;
     font-weight: 300;
-    padding: 0 1rem 2rem;
+    padding: 0 0 2rem;
     border-bottom: 3px solid #2b2121;
     margin-bottom: 0.2rem;
 }
@@ -54,10 +60,47 @@ fieldset {
     margin-bottom: 2rem;
 }
 
+legend {
+    font-size: 1.2rem;
+    display: block;
+    width: 100%;
+    padding-top: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+legend:first-child {
+    border-top: 2px solid #2b2121;
+}
+
 .input-container {
     display: flex;
     flex-direction: column;
-    margin-bottom: 1rem;
+    margin-bottom: 1.15rem;
+}
+
+label {
+    font-size: 0.95rem;
+    color: #a8a8a8;
+    margin-bottom: 0.5rem;
+}
+
+input,
+select {
+    padding: 1rem;
+    background-color: #e8e6e6;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+
+input::placeholder {
+    opacity: 0.5;
+    font-style: italic;
+    text-align: right;
+}
+
+input#zip {
+    width: 50%;
 }
 
 textarea {
