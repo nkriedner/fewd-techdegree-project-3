@@ -163,10 +163,12 @@ button {
     background: #40caca;
     color: white;
     font-size: 1.25rem;
+    transition: background 0.5s;
 }
 
 button:hover {
     cursor: pointer;
+    background: #239696;
 }
 
 footer {
