@@ -195,6 +195,9 @@ footer {
     }
 
     input#zip {
-        width: 25%;
+        width: 25%; /* this is how the mockup looks */
+
+        /* To calculate exactly 25% of the other inputs this would be correct: */
+        /* width: calc(70% / 4); */
     }
 }
